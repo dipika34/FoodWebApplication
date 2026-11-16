@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Cart Application</title>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header>
+    <h1>🍔 Foodie Cart</h1>
+    <button onclick="toggleCart()">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </button>
+</header>
+
+<section class="hero">
+    <h2>Delicious Food, Delivered Fresh!</h2>
+    <p>Choose your favourite food and order now.</p>
+</section>
+
+<main>
+    <h2>Food Categories</h2>
+    <div class="categories">
+        <button onclick="filterFood('All')">All</button>
+        <button onclick="filterFood('Pizza')">🍕 Pizza</button>
+        <button onclick="filterFood('Burger')">🍔 Burger</button>
+        <button onclick="filterFood('Drinks')">🥤 Drinks</button>
+        <button onclick="filterFood('Dessert')">🍰 Dessert</button>
+    </div>
+
+    <h2>Our Food Items</h2>
+    <div id="food-container" class="food-container"></div>
+
+    <section id="cart-section" class="cart">
+        <h2>🛒 Your Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total: ₹<span id="total">0</span></h3>
+        <button class="checkout" onclick="checkout()">
+            Checkout
+        </button>
+    </section>
+</main>
+
+<script src="script1.js"></script>
+</body>
+</html>
